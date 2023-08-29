@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:task_5/listview.dart';
+import 'package:task_5/Alertdailog.dart';
 
 class Costom_AlertDialog extends StatelessWidget {
   String title;
@@ -11,11 +11,11 @@ class Costom_AlertDialog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  AlertDialog(
-      title: Text("Warnnig"),
-      content: Text("please enter number"),
+      title: Text(title),
+      content: Text(subtitle),
       actions: [
-        TextButton(onPressed: (){}, child: Text(title)),
-        TextButton(onPressed: (){}, child: Text(subtitle)),
+        TextButton(onPressed: (){}, child: Text("cancel")),
+        TextButton(onPressed: (){}, child: Text("ok")),
       ],
 
 

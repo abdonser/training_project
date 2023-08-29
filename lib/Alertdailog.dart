@@ -13,7 +13,7 @@ class MyLayout extends StatelessWidget {
             title: "My profile", color: Colors.black, fontsize: 20),
         centerTitle: true,
         leading: Icon(Icons.menu),
-        actions: [
+        actions: const [
           Icon(Icons.notification_add),
         ],
       ),
@@ -28,13 +28,13 @@ class MyLayout extends StatelessWidget {
               child: MaterialButton(
                 onPressed: () {
                   showDialog(context: context, builder: ( BuildContext context ){
-                    return  Costom_AlertDialog(title: 'new waerning',subtitle: "checkout payed sucessfulluy",);
+                    return  Costom_AlertDialog(title: 'new warning',subtitle: "checkout payed sucessfully",);
                   });
                 },
                 child: Text("Exit"),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Container(
@@ -42,19 +42,19 @@ class MyLayout extends StatelessWidget {
               color: Colors.orange,
               child: MaterialButton(
                 onPressed: () {
-                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                    content: Text("checkout payed sucessfulluy"),
+                  ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                    content: Text("checkout payed sucessfully"),
                     duration: Duration(seconds: 100),
                   ));
                 },
                 child: Text("checkout"),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Container(
-              padding: EdgeInsets.all(0.8),
+              padding: const EdgeInsets.all(0.8),
               color: Colors.greenAccent,
               child: MaterialButton(
                 onPressed: () {
@@ -89,7 +89,7 @@ class MyLayout extends StatelessWidget {
   }
 }
 
-showAlertDialog(BuildContext context) {
+/*showAlertDialog(BuildContext context) {
   // set up the buttons
   Widget cancelButton = TextButton(
     child: Text("Cancel"),
@@ -134,4 +134,4 @@ showAlertDailog_A(BuildContext context) {
         return art;
       });
 }
-//
+*/
