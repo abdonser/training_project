@@ -9,6 +9,7 @@ import 'Screens/hoomscreen.dart';
 import 'Screens/layoutScreen.dart';
 import 'Screens/loginscreen.dart';
 import 'Screens/profile.dart';
+import 'listview.dart';
 
 
 
@@ -45,7 +46,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:  LogIn (),
+      home: MyLayout (),
     );
   }
 }
